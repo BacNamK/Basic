@@ -1,0 +1,195 @@
+body {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+.input_Infor {
+  width: 35%;
+  height: 100vh;
+  background-color: #e2feff86;
+  justify-items: center;
+  align-content: center;
+  font-size: large;
+}
+.shell {
+  display: flex;
+  margin-top: 10px;
+}
+.ip {
+  letter-spacing: 1px;
+  font-size: x-large;
+  margin-top: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+#name {
+  width: 200px;
+  height: 40px;
+  margin-right: 80px;
+  letter-spacing: 1px;
+}
+#time {
+  font-size: large;
+  width: 110px;
+  height: 42px;
+}
+#descr {
+  width: 400px;
+  height: 100px;
+}
+#sub {
+  width: 300px;
+  height: 45px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  font-size: large;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.644);
+}
+#sub:hover {
+  background-color: rgb(0, 215, 0);
+  transition: 0.8s;
+}
+
+input {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding-left: 10px;
+  border: none;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.644);
+  margin-top: 5px;
+  font-size: large;
+}
+textarea {
+  margin-top: 5px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.644);
+  font-size: x-large;
+}
+input:focus {
+  outline: none;
+}
+textarea:focus {
+  outline: none;
+}
+.slogan {
+  margin-top: 50px;
+  float: left;
+  font-size: x-large;
+}
+#lg {
+  width: 120px;
+  height: 120px;
+}
+i {
+  color: rgb(240, 152, 0);
+}
+#author {
+  display: inline-block;
+  color: rgb(240, 152, 0);
+  font-size: x-large;
+}
+.view {
+  height: 100vh;
+  width: 65%;
+  background-color: #ffdbac69;
+  width: 100%;
+  justify-items: center;
+  align-content: center;
+}
+#print {
+  display: flex;
+  width: 65%;
+}
+#iconc {
+  width: 30px;
+  height: 30px;
+}
+img {
+  width: 30px;
+  height: 30px;
+}
+.out {
+  width: 100%;
+  justify-items: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  letter-spacing: 1px;
+  font-size: x-large;
+}
+.shell_in {
+  position: relative;
+  width: 95%;
+  height: 80px;
+  background-color: #9df2ff;
+  border-radius: 10px;
+  align-items: center;
+  z-index: 1;
+  margin-top: 20px;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.544);
+  display: flex;
+  justify-content: space-between;
+}
+.shell_in:hover {
+  padding: 10px;
+  transition: 0.3s;
+}
+.detail {
+  margin-top: -1px;
+  display: none;
+  width: 93%;
+  height: auto;
+  background-color: rgb(0, 91, 131);
+  z-index: 0;
+  border-radius: 0 0 5px 5px;
+  transition: 1s;
+  padding: 5px;
+  font-size: large;
+  color: #ffffff;
+}
+.in {
+  width: 300px;
+  height: 50px;
+  background-color: #ffffff;
+  display: flex;
+  margin-left: 15px;
+  border-radius: 5px;
+  align-items: center;
+  padding: 0 10px 0 10px;
+  justify-content: space-between;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.544);
+}
+.bt {
+  margin-right: 15px;
+}
+button {
+  background-color: #9df2ff;
+  border: none;
+  width: 70px;
+  height: 50px;
+  border-radius: 5px;
+}
+.btndo {
+  margin-right: 10px;
+}
+.btndo:hover {
+  background-color: rgb(0, 190, 0);
+  transition: 0.3s;
+}
+.btnde:hover {
+  background-color: rgb(216, 18, 0);
+  transition: 0.3s;
+}
+.arrow {
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 24px;
+}
+.detail_son {
+  padding: 10px;
+  height: auto;
+  white-space: normal;
+  word-break: break-word;
+}
