@@ -55,10 +55,10 @@ input {
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
   padding-left: 10px;
-  border: none;
   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.644);
   margin-top: 5px;
   font-size: large;
+  border: #ffffff;
 }
 textarea {
   margin-top: 5px;

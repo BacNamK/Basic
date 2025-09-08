@@ -10,6 +10,8 @@ sb.addEventListener("click", () => {
   const de = document.getElementById("descr");
 
   if (nam.value === "") {
+    nam.style.border = "1px solid red";
+    return;
   }
   // Tạo Object
   const todo = {
@@ -43,6 +45,7 @@ const tb = document.querySelector("#print");
 
 const prinft = () => {
   const times = getTime();
+
   // Lấy dữ liệu từ local
   const ttStr = localStorage.getItem("todo");
   const tbody = document.querySelector("#print .view");
@@ -63,10 +66,12 @@ const prinft = () => {
                 </div>
                 <div class="dec"><span class="arrow">&#9660;</span> </div>
                 <div class="bt">  
-                    <button class="btndo"><img class="iconb" src="./check.png"></button>
+                    ${
+                      /*<button class="btndo"><img class="iconb" src="./img/check.png"></button>*/ ""
+                    }
                     <button class="btnde" data-id="${
                       element.id
-                    }"><img class="iconb" src="./trash.png"></button>
+                    }"><img class="iconb" src="./img/trash.png"></button>
                 </div>
             </div>
             <div class="detail"><div class="detail_son">${
@@ -115,6 +120,7 @@ const hanldid = (id) => {
     const ttob = JSON.parse(ttStr);
 
     // Giữ lại id khác với id user click ở phía trên
+    // newtodo ở đây là mảng mưới sau khi lọc
     const newtodo = ttob.filter((element, inex) => element.id + "" !== id);
     localStorage.setItem("todo", JSON.stringify(newtodo));
     window.location.reload();
@@ -179,5 +185,5 @@ function getTime() {
   });
 }
 setInterval(() => {
-  prinft();
+  prinft(), window.location.reload();
 }, 60000);
